@@ -71,47 +71,69 @@ export default function Navbar() {
   }, [lastScrollY]);
 
   return (
-    <nav
-      className={`fixed top-4 left-1/2 -translate-x-1/2 z-50
+  <>
+      {/* Mobile Navbar */}
+      <div
+        className="md:hidden fixed top-0 left-0 right-0 z-50
+                 bg-[#0b0f1a]/90 backdrop-blur
+                 border-b border-white/10"
+      >
+        <div className="flex items-center justify-between px-4 py-3">
+          <span className="font-medium text-white">
+            Portfolio.
+          </span>
+
+          <button
+            onClick={() => smoothScrollTo("contact")}
+            className="text-sm font-medium text-violet-300"
+          >
+            Contact
+          </button>
+        </div>
+      </div>
+
+      <nav
+        className={`hidden md:block fixed top-4 left-1/2 -translate-x-1/2 z-50
                   transition-transform duration-300
                   ${show ? "translate-y-0" : "-translate-y-20"}`}
-    >
-      <div
-        className="grid grid-cols-3 items-center
+      >
+        <div
+          className="grid grid-cols-3 items-center
                    w-[680px] h-14 px-6
                    rounded-full
                    bg-[#0b0f1a]/70
                    backdrop-blur-md
                    border border-white/10
                    shadow-lg shadow-black/30"
-      >
-        {/* Left */}
-        <div className="font-medium tracking-wide text-gray-200">
+        >
+          {/* Left */}
+          <div className="font-medium tracking-wide text-gray-200">
 
-        </div>
+          </div>
 
-        {/* Center */}
-        <div className="flex justify-center gap-10 text-[15px] font-medium tracking-wide">
-          {["about", "skills", "projects", "contact"].map((item) => (
-            <button
-              key={item}
-              onClick={() => smoothScrollTo(item)}
-              className={`px-4 py-1.5 rounded-full transition-all duration-300
+          {/* Center */}
+          <div className="flex justify-center gap-10 text-[15px] font-medium tracking-wide">
+            {["about", "skills", "projects", "contact"].map((item) => (
+              <button
+                key={item}
+                onClick={() => smoothScrollTo(item)}
+                className={`px-4 py-1.5 rounded-full transition-all duration-300
                     ${activeSection === item
-                  ? "bg-white/10 text-white"
-                  : "text-gray-300 hover:bg-white/5 hover:text-white"
-                }
+                    ? "bg-white/10 text-white"
+                    : "text-gray-300 hover:bg-white/5 hover:text-white"
+                  }
             `}
-            >
-              {item.charAt(0).toUpperCase() + item.slice(1)}
-            </button>
+              >
+                {item.charAt(0).toUpperCase() + item.slice(1)}
+              </button>
 
-          ))}
+            ))}
+          </div>
+
+          {/* Right spacer */}
+          <div />
         </div>
-
-        {/* Right spacer */}
-        <div />
-      </div>
-    </nav>
-  );
+      </nav>
+    </>
+      );
 }
