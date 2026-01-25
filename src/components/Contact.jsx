@@ -1,41 +1,83 @@
+import { motion } from "framer-motion";
+
 export default function Contact() {
   return (
-    <section id="contact" className="py-20 px-4">
-      <div className="max-w-xl mx-auto text-center">
-        <h2 className="text-3xl font-bold mb-6">Contact</h2>
+    <section id="contact" className="relative pt-16 pb-28 px-4">
+      <motion.div
+        initial={{ opacity: 0, y: 30 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true }}
+        transition={{ duration: 0.6, ease: "easeOut" }}
+        className="max-w-4xl mx-auto text-center"
+      >
+        <h2 className="text-3xl font-bold mb-4">
+          Let’s Connect
+        </h2>
 
-        <p className="text-gray-400 mb-8">
-          Feel free to reach out for opportunities or collaboration.
+        <p className="text-gray-300 mb-12 max-w-xl mx-auto
+                       font-medium tracking-wide">
+          Open to internships and entry-level opportunities.
+          Feel free to reach out.
         </p>
 
-        <div className="space-y-4">
-          <p>
-            📧 <span className="text-gray-300">deepesh@example.com</span>
-          </p>
+        <div className="flex flex-wrap justify-center gap-6">
+          {/* Email */}
+          <a
+            href="mailto:deepeshsingh564@gmail.com"
+            className="px-6 py-3 rounded-full
+                       border border-white/15
+                       text-gray-200
+                       transition-all duration-300
+                       hover:border-violet-400/50
+                       hover:text-white"
+          >
+            📧 Email
+          </a>
 
-          <p>
-            🔗{" "}
-            <a
-              href="https://github.com/yourusername"
-              target="_blank"
-              className="text-blue-400 hover:underline"
-            >
-              GitHub
-            </a>
-          </p>
+          {/* GitHub */}
+          <a
+            href="https://github.com/DeepeshSingh564"
+            target="_blank"
+            className="px-6 py-3 rounded-full
+                       border border-white/15
+                       text-gray-200
+                       transition-all duration-300
+                       hover:border-violet-400/50
+                       hover:text-white"
+          >
+            🐙 GitHub
+          </a>
 
-          <p>
-            🔗{" "}
-            <a
-              href="https://linkedin.com/in/yourusername"
-              target="_blank"
-              className="text-blue-400 hover:underline"
-            >
-              LinkedIn
-            </a>
-          </p>
+          {/* LinkedIn */}
+          <a
+            href="https://www.linkedin.com/in/deepesh-singh-689289338"
+            target="_blank"
+            className="px-6 py-3 rounded-full
+                       border border-white/15
+                       text-gray-200
+                       transition-all duration-300
+                       hover:border-violet-400/50
+                       hover:text-white"
+          >
+            💼 LinkedIn
+          </a>
+
+          {/* Resume */}
+          <a
+            href="/resume.pdf"
+            target="_blank"
+            className="px-6 py-3 rounded-full
+                       border border-violet-400/40
+                       text-white
+                       font-medium
+                       shadow-[0_0_20px_rgba(168,85,247,0.2)]
+                       transition-all duration-300
+                       hover:shadow-[0_0_35px_rgba(168,85,247,0.35)]"
+          >
+            📄 Resume
+          </a>
         </div>
-      </div>
+      </motion.div>
     </section>
   );
 }
