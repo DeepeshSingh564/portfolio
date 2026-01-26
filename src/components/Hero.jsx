@@ -40,7 +40,7 @@ export default function Hero() {
                 className="relative z-10 max-w-5xl mx-auto px-6 md:px-0 text-left"
             >
                 <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight">
-                    An insight into my journey as a software developer.
+                   An insight into my journey as an aspiring software developer
                 </h1>
 
                 <p className="mt-6 text-base md:text-lg text-gray-400 max-w-2xl">
