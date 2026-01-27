@@ -97,7 +97,7 @@ export default function Projects() {
                             <a href="https://github.com/DeepeshSingh564/WorkStream-Realtime-Activity-Dashboard1" className="text-violet-300 hover:underline">
                                 GitHub
                             </a>
-                            <a href="#" className="text-violet-300 hover:underline">
+                            <a href="https://workstream-realtime-activity-dashboard1.onrender.com" className="text-violet-300 hover:underline">
                                 Live Demo
                             </a>
                         </div>
