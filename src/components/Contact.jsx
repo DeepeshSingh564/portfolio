@@ -64,7 +64,7 @@ export default function Contact() {
 
           {/* Resume */}
           <a
-            href="/resume.pdf"
+            href="/resumee.pdf"
             target="_blank"
             className="px-6 py-3 rounded-full
                        border border-violet-400/40

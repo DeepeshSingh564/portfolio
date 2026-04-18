@@ -30,12 +30,12 @@ export default function Skills() {
                   hover:border-violet-400/40
                    hover:shadow-[0_0_30px_-10px_rgba(139,92,246,0.3)]">
               <h3 className="text-lg font-semibold mb-3 text-violet-300">
-              Frontend</h3>
+                Frontend</h3>
               <ul className="text-gray-200 space-y-2 text-[15px] font-medium">
-  <li>🌐 HTML & CSS – semantic, responsive layouts</li>
-  <li>🎨 Tailwind CSS – utility-first styling</li>
-  <li>⚡ JavaScript (ES6+) – async logic, APIs</li>
-</ul>
+                <li>🌐 HTML & CSS – semantic, responsive layouts</li>
+                <li>🎨 Tailwind CSS – utility-first styling</li>
+                <li>⚡ JavaScript (ES6+) – async logic, APIs</li>
+              </ul>
 
             </div>
 
@@ -45,13 +45,13 @@ export default function Skills() {
                   hover:border-violet-400/40
                    hover:shadow-[0_0_30px_-10px_rgba(139,92,246,0.3)]">
               <h3 className="text-lg font-semibold mb-3 text-violet-300">
-Backend</h3>
-             <ul className="text-gray-200 space-y-2 text-[15px] font-medium">
-  <li>🧩 Django – backend logic & APIs</li>
-  <li>🔄 Channels – WebSocket support</li>
-  <li>🚀 Redis – caching & message broker</li>
-  <li>🔐 Authentication – JWT & sessions</li>
-</ul>
+                Backend</h3>
+              <ul className="text-gray-200 space-y-2 text-[15px] font-medium">
+                <li>🧩 Django – backend logic & APIs</li>
+                <li>🔄 Channels – WebSocket support</li>
+                <li>🚀 Redis – caching & message broker</li>
+                <li>🔐 Authentication – JWT & sessions</li>
+              </ul>
 
 
             </div>
@@ -62,12 +62,12 @@ Backend</h3>
                   hover:border-violet-400/40
                    hover:shadow-[0_0_30px_-10px_rgba(139,92,246,0.3)]">
               <h3 className="text-lg font-semibold mb-3 text-violet-300">
-Data / AI</h3>
-<ul className="text-gray-200 space-y-2 text-[15px] font-medium">
-  <li>🗄 SQL – queries & database </li>
-  <li>📡 REST APIs – frontend ↔ backend flow</li>
-  <li>🤖 AI API Integration – prompt-based features</li>
-</ul>
+                Data / AI</h3>
+              <ul className="text-gray-200 space-y-2 text-[15px] font-medium">
+                <li>🗄 SQL – queries & database </li>
+                <li>📡 REST APIs – frontend ↔ backend flow</li>
+                <li>🤖 AI API Integration – prompt-based features</li>
+              </ul>
 
 
 
@@ -78,13 +78,13 @@ Data / AI</h3>
                   transition-all duration-300
                   hover:border-violet-400/40
                   hover:shadow-[0_0_30px_-10px_rgba(139,92,246,0.3)]">
-             <h3 className="text-lg font-semibold mb-3 text-violet-300">
-Tools & Practices</h3>
-<ul className="text-gray-200 space-y-2 text-[15px] font-medium">
-  <li>🐙 Git & GitHub – version control</li>
-  <li>🧪 Postman – API testing</li>
-  <li>🧹 Clean code practices</li>
-</ul>
+              <h3 className="text-lg font-semibold mb-3 text-violet-300">
+                Tools & Practices</h3>
+              <ul className="text-gray-200 space-y-2 text-[15px] font-medium">
+                <li>🐙 Git & GitHub – version control</li>
+                <li>🧪 Postman – API testing</li>
+                <li>🧹 Clean code practices</li>
+              </ul>
 
 
             </div>

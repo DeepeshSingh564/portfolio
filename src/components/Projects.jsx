@@ -57,7 +57,7 @@ export default function Projects() {
                             <a href="https://github.com/DeepeshSingh564/interview-coach-ai" className="text-violet-300 hover:underline">
                                 GitHub
                             </a>
-                            <a href="#" className="text-violet-300 hover:underline">
+                            <a href="https://intelliview-r9bp.onrender.com/" className="text-violet-300 hover:underline">
                                 Live Demo
                             </a>
                         </div>
